@@ -10,7 +10,8 @@ cands={c['ruling']:c for c in json.load(open('cands_f.json'))}
 allc={c['ruling']:c for c in csv.DictReader(open('cands.csv'))}
 excl=[]
 if os.path.exists('exclude.csv'): excl=[r for r in csv.DictReader(open('exclude.csv'))]
-def norm(s): return re.sub(r'[^a-z0-9]','',re.sub(r'\b(inc|llc|corp|corporation|co|ltd|company|the|usa|us|america|group)\b','',(s or '').lower()))
+def norm(s): return re.sub(r'[^a-z0-9]','',re.sub(r'\b(inc|llc|corp|corporation|co|ltd|company|the|usa|us|america|group|and)\b','',re.split(r'\b(dba|d/b/a)\b',(s or '').lower())[0].replace('&',' ')))
+OVR=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json'))) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json')) else {}
 res=[]
 for f in sorted(glob.glob('results*/*.jsonl'),reverse=True):
   for line in open(f):
@@ -29,6 +30,10 @@ for r in res:
   seen.add(key)
   if r.get('status')=='keep':
     miss=[k for k in ['company','contact_name','title','phone','city','state','contact_source_url','evidence_url'] if not (r.get(k) or '').strip()]
+    if key in OVR: kills.append((r['company'],OVR[key])); continue
+    ck=(r.get('contact_name','').lower().strip(),r.get('state',''))
+    if ck in seenphone: continue
+    seenphone.add(ck)
     if miss or len(r['contact_name'].split())<2: kills.append((r.get('company'),'incomplete:'+','.join(miss) if miss else 'no-name')); continue
     if not TOK.search(r['title']) or re.search(r'vice president of (sales|marketing)|sales|marketing|product manager|engineer',r['title'],re.I) and not re.search(r'owner|president|ceo|founder',r['title'],re.I): kills.append((r['company'],'non-qualifying-title:'+r['title'])); continue
     r['phone']=normph(r['phone'])
