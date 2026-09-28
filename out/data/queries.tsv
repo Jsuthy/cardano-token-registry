@@ -1,0 +1,120 @@
+KC	HVAC	Kansas City	MO	hvac contractor Kansas City MO
+KC	HVAC	Overland Park	KS	hvac contractor Overland Park KS
+KC	HVAC	Olathe	KS	hvac contractor Olathe KS
+KC	HVAC	Lee's Summit	MO	hvac contractor Lee's Summit MO
+KC	HVAC	Independence	MO	hvac contractor Independence MO
+KC	HVAC	Kansas City	KS	hvac contractor Kansas City KS
+KC	HVAC	Lenexa	KS	hvac contractor Lenexa KS
+KC	HVAC	Shawnee	KS	hvac contractor Shawnee KS
+KC	HVAC	Blue Springs	MO	hvac contractor Blue Springs MO
+KC	HVAC	Liberty	MO	hvac contractor Liberty MO
+KC	Plumbing	Kansas City	MO	plumber Kansas City MO
+KC	Plumbing	Overland Park	KS	plumber Overland Park KS
+KC	Plumbing	Olathe	KS	plumber Olathe KS
+KC	Plumbing	Lee's Summit	MO	plumber Lee's Summit MO
+KC	Plumbing	Independence	MO	plumber Independence MO
+KC	Plumbing	Kansas City	KS	plumber Kansas City KS
+KC	Plumbing	Lenexa	KS	plumber Lenexa KS
+KC	Plumbing	Shawnee	KS	plumber Shawnee KS
+KC	Plumbing	Blue Springs	MO	plumber Blue Springs MO
+KC	Plumbing	Liberty	MO	plumber Liberty MO
+KC	Electrical	Kansas City	MO	electrician Kansas City MO
+KC	Electrical	Overland Park	KS	electrician Overland Park KS
+KC	Electrical	Olathe	KS	electrician Olathe KS
+KC	Electrical	Lee's Summit	MO	electrician Lee's Summit MO
+KC	Electrical	Independence	MO	electrician Independence MO
+KC	Electrical	Kansas City	KS	electrician Kansas City KS
+KC	Electrical	Lenexa	KS	electrician Lenexa KS
+KC	Electrical	Shawnee	KS	electrician Shawnee KS
+KC	Electrical	Blue Springs	MO	electrician Blue Springs MO
+KC	Electrical	Liberty	MO	electrician Liberty MO
+KC	Roofing	Kansas City	MO	roofing contractor Kansas City MO
+KC	Roofing	Overland Park	KS	roofing contractor Overland Park KS
+KC	Roofing	Olathe	KS	roofing contractor Olathe KS
+KC	Roofing	Lee's Summit	MO	roofing contractor Lee's Summit MO
+KC	Roofing	Independence	MO	roofing contractor Independence MO
+KC	Roofing	Kansas City	KS	roofing contractor Kansas City KS
+KC	Roofing	Lenexa	KS	roofing contractor Lenexa KS
+KC	Roofing	Shawnee	KS	roofing contractor Shawnee KS
+KC	Roofing	Blue Springs	MO	roofing contractor Blue Springs MO
+KC	Roofing	Liberty	MO	roofing contractor Liberty MO
+KC	GC	Kansas City	MO	general contractor Kansas City MO
+KC	GC	Overland Park	KS	general contractor Overland Park KS
+KC	GC	Olathe	KS	general contractor Olathe KS
+KC	GC	Lee's Summit	MO	general contractor Lee's Summit MO
+KC	GC	Independence	MO	general contractor Independence MO
+KC	GC	Kansas City	KS	general contractor Kansas City KS
+KC	GC	Lenexa	KS	general contractor Lenexa KS
+KC	GC	Shawnee	KS	general contractor Shawnee KS
+KC	GC	Blue Springs	MO	general contractor Blue Springs MO
+KC	GC	Liberty	MO	general contractor Liberty MO
+DFW	HVAC	Dallas	TX	hvac contractor Dallas TX
+DFW	HVAC	Fort Worth	TX	hvac contractor Fort Worth TX
+DFW	HVAC	Plano	TX	hvac contractor Plano TX
+DFW	HVAC	Arlington	TX	hvac contractor Arlington TX
+DFW	HVAC	Frisco	TX	hvac contractor Frisco TX
+DFW	HVAC	McKinney	TX	hvac contractor McKinney TX
+DFW	HVAC	Irving	TX	hvac contractor Irving TX
+DFW	HVAC	Garland	TX	hvac contractor Garland TX
+DFW	HVAC	Denton	TX	hvac contractor Denton TX
+DFW	HVAC	Carrollton	TX	hvac contractor Carrollton TX
+DFW	HVAC	Grapevine	TX	hvac contractor Grapevine TX
+DFW	HVAC	Mesquite	TX	hvac contractor Mesquite TX
+DFW	HVAC	Richardson	TX	hvac contractor Richardson TX
+DFW	HVAC	Mansfield	TX	hvac contractor Mansfield TX
+DFW	Plumbing	Dallas	TX	plumber Dallas TX
+DFW	Plumbing	Fort Worth	TX	plumber Fort Worth TX
+DFW	Plumbing	Plano	TX	plumber Plano TX
+DFW	Plumbing	Arlington	TX	plumber Arlington TX
+DFW	Plumbing	Frisco	TX	plumber Frisco TX
+DFW	Plumbing	McKinney	TX	plumber McKinney TX
+DFW	Plumbing	Irving	TX	plumber Irving TX
+DFW	Plumbing	Garland	TX	plumber Garland TX
+DFW	Plumbing	Denton	TX	plumber Denton TX
+DFW	Plumbing	Carrollton	TX	plumber Carrollton TX
+DFW	Plumbing	Grapevine	TX	plumber Grapevine TX
+DFW	Plumbing	Mesquite	TX	plumber Mesquite TX
+DFW	Plumbing	Richardson	TX	plumber Richardson TX
+DFW	Plumbing	Mansfield	TX	plumber Mansfield TX
+DFW	Electrical	Dallas	TX	electrician Dallas TX
+DFW	Electrical	Fort Worth	TX	electrician Fort Worth TX
+DFW	Electrical	Plano	TX	electrician Plano TX
+DFW	Electrical	Arlington	TX	electrician Arlington TX
+DFW	Electrical	Frisco	TX	electrician Frisco TX
+DFW	Electrical	McKinney	TX	electrician McKinney TX
+DFW	Electrical	Irving	TX	electrician Irving TX
+DFW	Electrical	Garland	TX	electrician Garland TX
+DFW	Electrical	Denton	TX	electrician Denton TX
+DFW	Electrical	Carrollton	TX	electrician Carrollton TX
+DFW	Electrical	Grapevine	TX	electrician Grapevine TX
+DFW	Electrical	Mesquite	TX	electrician Mesquite TX
+DFW	Electrical	Richardson	TX	electrician Richardson TX
+DFW	Electrical	Mansfield	TX	electrician Mansfield TX
+DFW	Roofing	Dallas	TX	roofing contractor Dallas TX
+DFW	Roofing	Fort Worth	TX	roofing contractor Fort Worth TX
+DFW	Roofing	Plano	TX	roofing contractor Plano TX
+DFW	Roofing	Arlington	TX	roofing contractor Arlington TX
+DFW	Roofing	Frisco	TX	roofing contractor Frisco TX
+DFW	Roofing	McKinney	TX	roofing contractor McKinney TX
+DFW	Roofing	Irving	TX	roofing contractor Irving TX
+DFW	Roofing	Garland	TX	roofing contractor Garland TX
+DFW	Roofing	Denton	TX	roofing contractor Denton TX
+DFW	Roofing	Carrollton	TX	roofing contractor Carrollton TX
+DFW	Roofing	Grapevine	TX	roofing contractor Grapevine TX
+DFW	Roofing	Mesquite	TX	roofing contractor Mesquite TX
+DFW	Roofing	Richardson	TX	roofing contractor Richardson TX
+DFW	Roofing	Mansfield	TX	roofing contractor Mansfield TX
+DFW	GC	Dallas	TX	general contractor Dallas TX
+DFW	GC	Fort Worth	TX	general contractor Fort Worth TX
+DFW	GC	Plano	TX	general contractor Plano TX
+DFW	GC	Arlington	TX	general contractor Arlington TX
+DFW	GC	Frisco	TX	general contractor Frisco TX
+DFW	GC	McKinney	TX	general contractor McKinney TX
+DFW	GC	Irving	TX	general contractor Irving TX
+DFW	GC	Garland	TX	general contractor Garland TX
+DFW	GC	Denton	TX	general contractor Denton TX
+DFW	GC	Carrollton	TX	general contractor Carrollton TX
+DFW	GC	Grapevine	TX	general contractor Grapevine TX
+DFW	GC	Mesquite	TX	general contractor Mesquite TX
+DFW	GC	Richardson	TX	general contractor Richardson TX
+DFW	GC	Mansfield	TX	general contractor Mansfield TX
