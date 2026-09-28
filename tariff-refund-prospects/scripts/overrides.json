@@ -1,1 +1,19 @@
-{"johnnywas": "out-of-icp-size:subsidiary of NYSE:OXM (Oxford Industries acquired 2022, $270M deal)"}
+{"kill": {
+  "johnnywas": "out-of-icp-size:subsidiary of NYSE:OXM (Oxford Industries acquired 2022, $270M deal)",
+  "noninmedical": "weak-import-evidence:ruling N349263 is for goods from an unidentified country",
+  "carwild": "non-asia-origin:Dominican Republic (ruling N354701)",
+  "nutritionalproductsinternational": "not-importer:BBB lists it as a marketing consultant (brand-launch service firm)"
+ },
+ "origin": {
+  "N344252": "Malaysia (PCBAs) / China (assembly)",
+  "N346349": "China (setting) / India (stones)",
+  "N344539": "China, Vietnam, Taiwan, India (brake kit components)",
+  "N347703": "China / Thailand / India (processing of U.S. castings)",
+  "N356047": "India (processing; CBP origin ruled U.S.)",
+  "N356391": "China (pillow shell sewn/filled in China)",
+  "N353148": "China",
+  "N353930": "South Korea",
+  "N352382": "China",
+  "N349766": "China",
+  "N348343": "Vietnam"
+ }}

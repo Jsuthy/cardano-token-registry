@@ -11,7 +11,8 @@ allc={c['ruling']:c for c in csv.DictReader(open('cands.csv'))}
 excl=[]
 if os.path.exists('exclude.csv'): excl=[r for r in csv.DictReader(open('exclude.csv'))]
 def norm(s): return re.sub(r'[^a-z0-9]','',re.sub(r'\b(inc|llc|corp|corporation|co|ltd|company|the|usa|us|america|group|and)\b','',re.split(r'\b(dba|d/b/a)\b',(s or '').lower())[0].replace('&',' ')))
-OVR=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json'))) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json')) else {}
+OVRALL=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json'))) if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)),'overrides.json')) else {}
+OVR=OVRALL.get('kill',{}); ORIG=OVRALL.get('origin',{})
 res=[]
 for f in sorted(glob.glob('results*/*.jsonl'),reverse=True):
   for line in open(f):
@@ -41,7 +42,8 @@ for r in res:
     if any(norm(e.get('Company') or e.get('company'))==key for e in excl): kills.append((r['company'],'excluded')); continue
     c,asia,ieepa=origin(r['ruling'])
     if not asia: kills.append((r['company'],f'non-asia-origin:{c}')); continue
-    r['_origin']=c.rstrip('?'); r['_ieepa']=ieepa
+    if c and c.endswith('?') and r['ruling'] not in ORIG: kills.append((r['company'],f'weak-import-evidence:origin unconfirmed ({c})')); continue
+    r['_origin']=ORIG.get(r['ruling'],c.rstrip('?')); r['_ieepa']=ieepa
     keeps.append(r)
   else: kills.append((r.get('company') or r.get('ruling'),r.get('reason') or 'unspecified'))
 for c in allc.values():
@@ -53,8 +55,8 @@ with open(f'{OUT}/tariff-refund-prospects.csv','w',newline='') as fh:
   for r in keeps:
     src=r['contact_source_url']; ps=r.get('phone_source_url') or src
     srcs=src if ps==src else f"{src} ; phone: {ps}"
-    ie=' Ruling lists IEEPA 9903.01.xx duty.' if r['_ieepa'] else ''
-    notes=f"Import signal: {r.get('import_signal','').strip().rstrip('.')} (CBP ruling {r['ruling']}; origin {r['_origin']}).{ie} Call main line {r['phone']} and ask for {r['contact_name']} ({r['title']}). Evidence: {r['evidence_url']} ; contact: {srcs}"
+    ie='; ruling lists IEEPA 9903.01.xx duty' if r['_ieepa'] else ''
+    notes=f"Import signal: {r.get('import_signal','').strip().rstrip('.')} (CBP ruling {r['ruling']}; origin {r['_origin']}{ie}). Call main line {r['phone']} and ask for {r['contact_name']} ({r['title']}). Evidence: {r['evidence_url']} ; contact: {srcs}"
     w.writerow([r['company'],f"{r['city']}, {r['state']}",r['phone'],'CAPE-IEEPA','unconfirmed',r['contact_name'],r['title'],r.get('email',''),'New','',notes,'',''])
 with open(f'{OUT}/killed.csv','w',newline='') as fh:
   w=csv.writer(fh);w.writerow(['Company','reason']);w.writerows(kills)

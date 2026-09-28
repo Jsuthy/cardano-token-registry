@@ -17,5 +17,5 @@ def origin(ruling):
   if not c:
     mm=re.search(r'\b('+A+r')\b',t)
     if mm: c=mm.group(1)+'?'
-  asia=bool(c and re.match(A,c))
+  asia=bool(c and re.search(r'\b('+A+r')\b',c))
   return c,asia,ieepa

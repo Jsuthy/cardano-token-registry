@@ -57,6 +57,7 @@ Kill reasons used in `killed.csv`:
 | `not-importer` | Not a physical-goods importer |
 | `non-asia-origin` | Ruling product is not from Asia |
 | `non-qualifying-title` | Only non-qualifying titles found |
+| `weak-import-evidence` | Ruling does not establish an Asia-origin import |
 | `bad-phone-format` | Phone could not be normalized |
 | `excluded` | Matched `exclude.csv` |
 | `other:*` | Anything else, e.g. site unreachable or garbled ruling data |
@@ -69,7 +70,7 @@ Kill reasons used in `killed.csv`:
 
 - A company key is built by lower-casing the name, stripping legal suffixes (`inc`, `llc`, `corp`, `co`, `ltd`, `company`, `the`, `usa`, `us`, `america`, `group`) and removing non-alphanumerics.
 - Rulings are deduped on that key, keeping the most recent ruling per company. The broker-filed pool excludes any key already in the direct-filer pool.
-- At assembly, a `keep` from any pass wins over a `kill`, and each company appears once in either the prospects file or `killed.csv`.
+- At assembly, a `keep` from any pass wins over a `kill`, and each company appears once in either the prospects file or `killed.csv`. Keeps are also deduped on (contact name, state). Manual corrections (kills and origin labels) live in `scripts/overrides.json`.
 
 ## Re-run recipe
 

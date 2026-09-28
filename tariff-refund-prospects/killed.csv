@@ -1,9 +1,10 @@
 Company,reason
-Pressure Connections Corp.,non-asia-origin:South Korea
-"RJ Equipment, Inc.",non-asia-origin:South Korea
+Nutritional Products International Inc.,not-importer:BBB lists it as a marketing consultant (brand-launch service firm)
 Johnny Was LLC,"out-of-icp-size:subsidiary of NYSE:OXM (Oxford Industries acquired 2022, $270M deal)"
 NextGen Gardens LLC,non-asia-origin:Poland
 Artistic Tile Inc,non-asia-origin:Italy
+"Nonin Medical, Inc.",weak-import-evidence:ruling N349263 is for goods from an unidentified country
+Carwild Corporation,non-asia-origin:Dominican Republic (ruling N354701)
 "Athlete Performance Solutions, LLC",no-name
 "Atlas International - Consulting, Sourcing, and Brokering LLC",broker
 "Hyper Bicycles, Inc.",no-name
@@ -80,6 +81,16 @@ Enchem America LLC,out-of-icp-size
 Canadian Rail Guide Corp.,no-website
 ITR America LLC,out-of-icp-size
 Radial Engineering USA Inc.,foreign-only
+Fibre by Auskin USA Inc.,no-name
+Yonwoo Company,foreign-only
+Crownhill Packaging Ltd.,foreign-only
+Top Serve Tennis Pty Ltd.,foreign-only
+"Houdini, Inc.",no-website
+Weber-Stephen Products LLC,out-of-icp-size
+"Reekon Tools, Inc.",no-name
+Hangzhou Mingxuan Sanitary Products Co.,foreign-only
+Liming USA Company,no-website
+Seasons HK Ltd.,foreign-only
 Hwashin H-Steel Co.,foreign-only
 Bassett Mirror Company,no-name
 Dongguan Lopie Paper Co.,foreign-only
@@ -188,7 +199,6 @@ APT Automotive Co.,no-website
 Babcock Power Services Inc.,out-of-icp-size
 Outset Medical Inc.,out-of-icp-size
 Mersen USA EP Corp.,foreign-only
-Yonwoo Co.,foreign-only
 "Vive Health, LLC",no-name
 "Sed Med, Inc.",no-website
 Pic Corporation,no-website
